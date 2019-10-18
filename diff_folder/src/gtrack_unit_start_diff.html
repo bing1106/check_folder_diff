@@ -1,0 +1,86 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8" />
+    <title></title>
+    <style type="text/css">
+        table.diff {font-family:Courier; border:medium;}
+        .diff_header {background-color:#e0e0e0}
+        td.diff_header {text-align:right}
+        .diff_next {background-color:#c0c0c0}
+        .diff_add {background-color:#aaffaa}
+        .diff_chg {background-color:#ffff77}
+        .diff_sub {background-color:#ffaaaa}
+    </style>
+</head>
+
+<body>
+    
+    <table class="diff" id="difflib_chg_to31__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        
+        <tbody>
+            <tr><td class="diff_next" id="difflib_chg_to31__0"></td><td class="diff_header" id="from31_95">95</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;velocityHandling&nbsp;=&nbsp;VELOCITY_INIT;</td><td class="diff_next"></td><td class="diff_header" id="to31_95">95</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;velocityHandling&nbsp;=&nbsp;VELOCITY_INIT;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_96">96</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_96">96</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_97">97</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;u.vector&nbsp;=&nbsp;*uCenter;</td><td class="diff_next"></td><td class="diff_header" id="to31_97">97</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;u.vector&nbsp;=&nbsp;*uCenter;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_98">98</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_98">98</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_99">99</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;u.vector.doppler&nbsp;=&nbsp;gtrack_unrollRadialVelocity(inst-&gt;maxRadialVelocity,&nbsp;inst-&gt;initialRadialVelocity,&nbsp;uCenter-&gt;doppler);</td><td class="diff_next"></td><td class="diff_header" id="to31_99">99</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;u.vector.doppler&nbsp;=&nbsp;gtrack_unrollRadialVelocity(inst-&gt;maxRadialVelocity,&nbsp;inst-&gt;initialRadialVelocity,&nbsp;uCenter-&gt;doppler);</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_100">100</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;rangeRate&nbsp;=&nbsp;u.vector.doppler;</td><td class="diff_next"></td><td class="diff_header" id="to31_100">100</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;rangeRate&nbsp;=&nbsp;u.vector.doppler;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_101">101</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_101">101</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_102">102</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Initialize&nbsp;a-priori&nbsp;State&nbsp;information&nbsp;*/</td><td class="diff_next"></td><td class="diff_header" id="to31_102">102</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Initialize&nbsp;a-priori&nbsp;State&nbsp;information&nbsp;*/</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_103">103</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;gtrack_spherical2cartesian(inst-&gt;currentStateVectorType,&nbsp;u.array,&nbsp;inst-&gt;S_apriori_hat);</td><td class="diff_next"></td><td class="diff_header" id="to31_103">103</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;gtrack_spherical2cartesian(inst-&gt;currentStateVectorType,&nbsp;u.array,&nbsp;inst-&gt;S_apriori_hat);</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_104">104</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;memcpy(inst-&gt;H_s.array,&nbsp;u.array,&nbsp;sizeof(u.array));&nbsp;/*&nbsp;Initialize&nbsp;Hs&nbsp;to&nbsp;measurment&nbsp;vector&nbsp;*/</td><td class="diff_next"></td><td class="diff_header" id="to31_104">104</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;memcpy(inst-&gt;H_s.array,&nbsp;u.array,&nbsp;sizeof(u.array));&nbsp;/*&nbsp;Initialize&nbsp;Hs&nbsp;to&nbsp;measurment&nbsp;vector&nbsp;*/</td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to31__1">n</a></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"><a href="#difflib_chg_to31__1">n</a></td><td class="diff_header" id="to31_105">105</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_106">106</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Initialize&nbsp;measurments&nbsp;error&nbsp;limits&nbsp;*/</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_107">107</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gtrack_calcMeasurementLimits(u.vector.range,&nbsp;&amp;inst-&gt;gatingParams-&gt;limits,&nbsp;&amp;inst-&gt;H_limits.vector);</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_108">108</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_105">105</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Initialize&nbsp;a-priori&nbsp;Process&nbsp;covariance&nbsp;*/</td><td class="diff_next"></td><td class="diff_header" id="to31_109">109</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;Initialize&nbsp;a-priori&nbsp;Process&nbsp;covariance&nbsp;*/</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_106">106</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_110">110</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_107">107</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;P_apriori_hat&nbsp;=&nbsp;eye(6)&nbsp;*/</td><td class="diff_next"></td><td class="diff_header" id="to31_111">111</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;P_apriori_hat&nbsp;=&nbsp;eye(6)&nbsp;*/</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_108">108</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;memcpy(inst-&gt;P_apriori_hat,&nbsp;eye6x6,&nbsp;sizeof(eye6x6));&nbsp;*/</td><td class="diff_next"></td><td class="diff_header" id="to31_112">112</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;memcpy(inst-&gt;P_apriori_hat,&nbsp;eye6x6,&nbsp;sizeof(eye6x6));&nbsp;*/</td></tr>
+            <tr><td class="diff_next" id="difflib_chg_to31__1"></td><td class="diff_header" id="from31_109">109</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_113">113</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_110">110</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;P_apriori_hat&nbsp;=&nbsp;diag([0,0,0.5,0.5,1,1])&nbsp;*/</td><td class="diff_next"></td><td class="diff_header" id="to31_114">114</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;P_apriori_hat&nbsp;=&nbsp;diag([0,0,0.5,0.5,1,1])&nbsp;*/</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_111">111</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;memset(inst-&gt;P_apriori_hat,&nbsp;0,&nbsp;sizeof(inst-&gt;P_apriori_hat));</td><td class="diff_next"></td><td class="diff_header" id="to31_115">115</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;memset(inst-&gt;P_apriori_hat,&nbsp;0,&nbsp;sizeof(inst-&gt;P_apriori_hat));</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_112">112</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;for(n&nbsp;=&nbsp;0;&nbsp;n&nbsp;&lt;&nbsp;GTRACK_STATE_VECTOR_SIZE;&nbsp;n++)</td><td class="diff_next"></td><td class="diff_header" id="to31_116">116</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;for(n&nbsp;=&nbsp;0;&nbsp;n&nbsp;&lt;&nbsp;GTRACK_STATE_VECTOR_SIZE;&nbsp;n++)</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_113">113</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;P_apriori_hat[n*GTRACK_STATE_VECTOR_SIZE+n]&nbsp;=&nbsp;pInit[n];</td><td class="diff_next"></td><td class="diff_header" id="to31_117">117</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;P_apriori_hat[n*GTRACK_STATE_VECTOR_SIZE+n]&nbsp;=&nbsp;pInit[n];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_114">114</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_118">118</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_115">115</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;memset(inst-&gt;gD,&nbsp;0,&nbsp;sizeof(inst-&gt;gD));</td><td class="diff_next"></td><td class="diff_header" id="to31_119">119</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;memset(inst-&gt;gD,&nbsp;0,&nbsp;sizeof(inst-&gt;gD));</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_116">116</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;for(n&nbsp;=&nbsp;0;&nbsp;n&nbsp;&lt;&nbsp;GTRACK_MEASUREMENT_VECTOR_SIZE;&nbsp;n++)</td><td class="diff_next"></td><td class="diff_header" id="to31_120">120</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;for(n&nbsp;=&nbsp;0;&nbsp;n&nbsp;&lt;&nbsp;GTRACK_MEASUREMENT_VECTOR_SIZE;&nbsp;n++)</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_117">117</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;estSpread.array[n]&nbsp;=&nbsp;spreadInit[n];</td><td class="diff_next"></td><td class="diff_header" id="to31_121">121</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;estSpread.array[n]&nbsp;=&nbsp;spreadInit[n];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_118">118</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_122">122</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to31__top">t</a></td><td class="diff_header" id="from31_119">119</td><td nowrap="nowrap"><span class="diff_sub">&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;G&nbsp;=&nbsp;1.0f;</span></td><td class="diff_next"><a href="#difflib_chg_to31__top">t</a></td><td class="diff_header" id="to31_123">123</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;G&nbsp;=&nbsp;inst-&gt;gatingParams-&gt;gain;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_120">120</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;sFactor&nbsp;=&nbsp;1.0f;</td><td class="diff_next"></td><td class="diff_header" id="to31_124">124</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;inst-&gt;sFactor&nbsp;=&nbsp;1.0f;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_121">121</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_125">125</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_122">122</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to31_126">126</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_123">123</td><td nowrap="nowrap">#ifdef&nbsp;GTRACK_LOG_ENABLED</td><td class="diff_next"></td><td class="diff_header" id="to31_127">127</td><td nowrap="nowrap">#ifdef&nbsp;GTRACK_LOG_ENABLED</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_124">124</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(inst-&gt;verbose&nbsp;&amp;&nbsp;VERBOSE_STATE_INFO)</td><td class="diff_next"></td><td class="diff_header" id="to31_128">128</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(inst-&gt;verbose&nbsp;&amp;&nbsp;VERBOSE_STATE_INFO)</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_125">125</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gtrack_log(GTRACK_VERBOSE_DEBUG,&nbsp;"%llu:&nbsp;uid[%d]&nbsp;ALLOCATED,&nbsp;TID&nbsp;%d,&nbsp;Range&nbsp;%5.2f,&nbsp;Angle&nbsp;%2.4f,&nbsp;Doppler&nbsp;%5.1f=&gt;%5.1f\n",&nbsp;inst-&gt;heartBeatCount,&nbsp;inst-&gt;uid,&nbsp;inst-&gt;tid,&nbsp;u.vector.range,&nbsp;u.array[1],&nbsp;uCenter-&gt;doppler,&nbsp;u.vector.doppler);</td><td class="diff_next"></td><td class="diff_header" id="to31_129">129</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gtrack_log(GTRACK_VERBOSE_DEBUG,&nbsp;"%llu:&nbsp;uid[%d]&nbsp;ALLOCATED,&nbsp;TID&nbsp;%d,&nbsp;Range&nbsp;%5.2f,&nbsp;Angle&nbsp;%2.4f,&nbsp;Doppler&nbsp;%5.1f=&gt;%5.1f\n",&nbsp;inst-&gt;heartBeatCount,&nbsp;inst-&gt;uid,&nbsp;inst-&gt;tid,&nbsp;u.vector.range,&nbsp;u.array[1],&nbsp;uCenter-&gt;doppler,&nbsp;u.vector.doppler);</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_126">126</td><td nowrap="nowrap">#endif</td><td class="diff_next"></td><td class="diff_header" id="to31_130">130</td><td nowrap="nowrap">#endif</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from31_127">127</td><td nowrap="nowrap">}</td><td class="diff_next"></td><td class="diff_header" id="to31_131">131</td><td nowrap="nowrap">}</td></tr>
+        </tbody>
+    </table>
+    <table class="diff" summary="Legends">
+        <tr> <th colspan="2"> Legends </th> </tr>
+        <tr> <td> <table border="" summary="Colors">
+                      <tr><th> Colors </th> </tr>
+                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>
+                      <tr><td class="diff_chg">Changed</td> </tr>
+                      <tr><td class="diff_sub">Deleted</td> </tr>
+                  </table></td>
+             <td> <table border="" summary="Links">
+                      <tr><th colspan="2"> Links </th> </tr>
+                      <tr><td>(f)irst change</td> </tr>
+                      <tr><td>(n)ext change</td> </tr>
+                      <tr><td>(t)op</td> </tr>
+                  </table></td> </tr>
+    </table>
+</body>
+
+</html>
